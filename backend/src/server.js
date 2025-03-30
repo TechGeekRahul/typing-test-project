@@ -3,18 +3,20 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const config = require('./config/config');
 
-app.use(cors({
-  origin: true, 
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-}));
 
 const app = express();
 
 
 
 app.use(express.json());
+
+
+app.use(cors({
+  origin: true, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 
 
 mongoose.connect(config.MONGODB_URI)
