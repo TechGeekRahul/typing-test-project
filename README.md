@@ -57,8 +57,8 @@ A full-stack MERN application for measuring and analyzing typing performance. Th
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd typing-test-app
+git clone https://github.com/TechGeekRahul/typing-test-project.git
+cd typing-test-project
 ```
 
 2. Install backend dependencies:
