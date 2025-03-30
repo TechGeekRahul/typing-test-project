@@ -3,17 +3,17 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const config = require('./config/config');
 
-const corsOptions = {
-  origin: ['https://typing-test-project-omega.vercel.app/', 'http://localhost:3000'],
+app.use(cors({
+  origin: true, 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
-};
+}));
 
 const app = express();
 
 
-app.use(cors(corsOptions));
+
 app.use(express.json());
 
 
