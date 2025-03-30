@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 // Configure axios base URL
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://typing-test-project-vfux.onrender.com/';
 
 const AuthContext = createContext(null);
 
